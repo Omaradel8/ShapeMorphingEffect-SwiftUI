@@ -34,6 +34,9 @@ struct IntroView: View {
                 ContinueButton()
             }
             .frame(maxWidth: .infinity)
+            .overlay(alignment: .top) {
+                HeaderView()
+            }
         }
         .background {
             Rectangle()
@@ -87,6 +90,32 @@ struct IntroView: View {
         }
         .animation(.smooth(duration: 0.5, extraBounce: 0), value: activePage)
         .padding(.bottom, 12)
+    }
+    
+    @ViewBuilder
+    func HeaderView() -> some View {
+        HStack {
+            Button {
+                activePage = activePage.previousPage
+            } label: {
+                Image(systemName: "chevron.left")
+                    .font(.title3)
+                    .fontWeight(.semibold)
+                    .contentShape(.rect)
+            }
+            .opacity(activePage != .page1 ? 1 : 0)
+            
+            Spacer()
+            
+            Button("Skip") {
+                activePage = .page4
+            }
+            .fontWeight(.semibold)
+            .opacity(activePage != .page4 ? 1 : 0)
+            .animation(.snappy(duration: 0.35, extraBounce: 0), value: activePage)
+        }
+        .foregroundColor(.white)
+        .padding(15)
     }
     
     // Continue Button
