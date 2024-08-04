@@ -27,6 +27,7 @@ struct IntroView: View {
                 
                 Spacer()
                 
+                ContinueButton()
             }
             .frame(maxWidth: .infinity)
         }
@@ -35,6 +36,24 @@ struct IntroView: View {
                 .fill(.black.gradient)
                 .ignoresSafeArea()
         }
+    }
+    
+    
+    // Continue Button
+    @ViewBuilder
+    func ContinueButton() -> some View {
+        Button {
+            activePage = activePage.nextPage
+        } label: {
+            Text(activePage == .page4 ? "Login into PS App" : "Continue")
+                .contentTransition(.identity)
+                .foregroundStyle(.black)
+                .padding(.vertical, 15)
+                .frame(maxWidth: activePage == .page4 ? 220 : 180)
+                .background(.white, in: .capsule)
+        }
+        .padding(.bottom, 15)
+        .animation(.smooth(duration: 0.5, extraBounce: 0), value: activePage)
     }
 }
 
