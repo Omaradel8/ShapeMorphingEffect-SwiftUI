@@ -12,6 +12,8 @@
 		585ED6902C5EFD7B006C0BC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 585ED68F2C5EFD7B006C0BC1 /* Assets.xcassets */; };
 		585ED6932C5EFD7B006C0BC1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 585ED6922C5EFD7B006C0BC1 /* Preview Assets.xcassets */; };
 		585ED69C2C5EFE40006C0BC1 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585ED69B2C5EFE40006C0BC1 /* Page.swift */; };
+		585ED69E2C5F00FC006C0BC1 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585ED69D2C5F00FC006C0BC1 /* IntroView.swift */; };
+		585ED6A02C5F01B3006C0BC1 /* MorphingSymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585ED69F2C5F01B3006C0BC1 /* MorphingSymbolView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		585ED68F2C5EFD7B006C0BC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		585ED6922C5EFD7B006C0BC1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		585ED69B2C5EFE40006C0BC1 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		585ED69D2C5F00FC006C0BC1 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
+		585ED69F2C5F01B3006C0BC1 /* MorphingSymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorphingSymbolView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 		585ED69A2C5EFE3B006C0BC1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				585ED69D2C5F00FC006C0BC1 /* IntroView.swift */,
+				585ED69F2C5F01B3006C0BC1 /* MorphingSymbolView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -157,6 +163,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				585ED68E2C5EFD7A006C0BC1 /* ContentView.swift in Sources */,
+				585ED6A02C5F01B3006C0BC1 /* MorphingSymbolView.swift in Sources */,
+				585ED69E2C5F00FC006C0BC1 /* IntroView.swift in Sources */,
 				585ED68C2C5EFD7A006C0BC1 /* ShapeMorphingEffectApp.swift in Sources */,
 				585ED69C2C5EFE40006C0BC1 /* Page.swift in Sources */,
 			);
