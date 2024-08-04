@@ -25,6 +25,8 @@ struct IntroView: View {
                                                  foregroundColor: .white)
                 )
                 
+                TextContents(size)
+                
                 Spacer()
                 
                 ContinueButton()
@@ -38,6 +40,39 @@ struct IntroView: View {
         }
     }
     
+    @ViewBuilder
+    func TextContents(_ size: CGSize) -> some View {
+        VStack(spacing: 8) {
+            HStack(alignment: .top, spacing: 0) {
+                ForEach(Page.allCases, id: \.rawValue) { page in
+                    Text(page.title)
+                        .lineLimit(1)
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .kerning(1.1)
+                        .frame(width: size.width)
+                }
+            }
+            // Sliding Left or right based on the active page
+            .offset(x: -activePage.index * size.width)
+            .animation(.smooth(duration: 0.7, extraBounce: 0.1), value: activePage)
+            
+            HStack(alignment: .top, spacing: 0) {
+                ForEach(Page.allCases, id: \.rawValue) { page in
+                    Text(page.subTitle)
+                        .font(.callout)
+                        .multilineTextAlignment(.center)
+                        .foregroundStyle(.gray)
+                        .frame(width: size.width)
+                }
+            }
+            // Sliding Left or right based on the active page
+            .offset(x: -activePage.index * size.width)
+            .animation(.smooth(duration: 1, extraBounce: 0.2), value: activePage)
+        }
+        .padding(.top, 10)
+        .frame(width: size.width, alignment: .leading)
+    }
     
     // Continue Button
     @ViewBuilder
