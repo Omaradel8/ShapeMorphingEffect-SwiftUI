@@ -11,6 +11,7 @@
 		585ED68E2C5EFD7A006C0BC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585ED68D2C5EFD7A006C0BC1 /* ContentView.swift */; };
 		585ED6902C5EFD7B006C0BC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 585ED68F2C5EFD7B006C0BC1 /* Assets.xcassets */; };
 		585ED6932C5EFD7B006C0BC1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 585ED6922C5EFD7B006C0BC1 /* Preview Assets.xcassets */; };
+		585ED69C2C5EFE40006C0BC1 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585ED69B2C5EFE40006C0BC1 /* Page.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		585ED68D2C5EFD7A006C0BC1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		585ED68F2C5EFD7B006C0BC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		585ED6922C5EFD7B006C0BC1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		585ED69B2C5EFE40006C0BC1 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,8 @@
 		585ED68A2C5EFD7A006C0BC1 /* ShapeMorphingEffect */ = {
 			isa = PBXGroup;
 			children = (
+				585ED69A2C5EFE3B006C0BC1 /* View */,
+				585ED6992C5EFE37006C0BC1 /* Model */,
 				585ED68B2C5EFD7A006C0BC1 /* ShapeMorphingEffectApp.swift */,
 				585ED68D2C5EFD7A006C0BC1 /* ContentView.swift */,
 				585ED68F2C5EFD7B006C0BC1 /* Assets.xcassets */,
@@ -65,6 +69,21 @@
 				585ED6922C5EFD7B006C0BC1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		585ED6992C5EFE37006C0BC1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				585ED69B2C5EFE40006C0BC1 /* Page.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		585ED69A2C5EFE3B006C0BC1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +158,7 @@
 			files = (
 				585ED68E2C5EFD7A006C0BC1 /* ContentView.swift in Sources */,
 				585ED68C2C5EFD7A006C0BC1 /* ShapeMorphingEffectApp.swift in Sources */,
+				585ED69C2C5EFE40006C0BC1 /* Page.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
